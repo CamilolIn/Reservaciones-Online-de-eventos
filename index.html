@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloWebCamp</title>
+    <!--Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Oswald:wght@400&family=PT+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!--Maps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6246293a11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="head">
+        <div class="container">
+            <div class="redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="ubic">
+                <h3 class="h"><i class="far fa-calendar-alt"></i>10-12 DIC</h3>
+                <h3><i class="fas fa-map-marker-alt"></i>Bogota D.C</h3>
+            </div>
+            <h1>CLOWEBCAMP</h1>
+            <p>La mejor conferencia de <span>diseño web</span> </p>
+        </div>
+    </header>
+
+    <!--Section Barra de Navegacion -->
+    <section class="barra">
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo.svg" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">CONFERENCIA</a></li>
+                    <li><a href="#">CALENDARIO</a></li>
+                    <li><a href="#">INVITADOS</a></li>
+                    <li><a href="reservaciones.html" class="last">RESERVACIONES</a></li>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descripcion de Evento -->
+    <section class="descripcion">
+        <div class="container">
+            <h1>LA MEJOR CONFERENCIA DE DISEÑO WEB EN ESPAÑOL</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eum consequatur nemo hic minus harum
+                perspiciatis sit dolores nam quia qui porro, quaerat, enim mollitia. Rerum tempora similique illo non
+                possimus. Animi repellendus sint doloremque, quas quis dicta magnam reiciendis.</p>
+        </div>
+        
+    </section>
+
+    <!-- Section programa del Evento -->
+    <section class="cronogra">
+        <video autoplay loop poster="img/bg-talleres.jpg">
+            <source src="videos/video.mp4" type="video/mp4">
+            <source src="videos/video.ogv" type="video/ogv">
+            <source src="videos/video.webm" type="video/webm">
+        </video>
+        <div class="container">
+            <div class="program">
+                <h1>PROGRAMA DEL EVENTO</h1>
+                <hr id="sep__uno">
+                <ul class="list__uno">
+                    <li><i class="fas fa-code"></i>Talleres</li>
+                    <li><i class="fas fa-comments"></i>Conferencias</li>
+                    <li><i class="fas fa-university"></i>Seminarios</li>
+                </ul>
+                <hr>
+                <div class="content__prom">
+                    <h2>HTMML 5, CSS3 y JavaScript</h2>
+                    <ul>
+                        <li><i class="far fa-clock"></i>14:00 hrs</li>
+                        <li><i class="far fa-calendar-alt"></i>10 de Dic</li>
+                        <li><i class="fas fa-user"></i>Camilo Lindarte</li>
+                    </ul>
+                    <hr>
+                    <h2>Responsive Web Desing</h2>
+                    <ul>
+                        <li><i class="far fa-clock"></i>10:00 hrs</li>
+                        <li><i class="far fa-calendar-alt"></i>10 de Dic</li>
+                        <li><i class="fas fa-user"></i>Nicolas Valencia</li>
+                    </ul>
+
+                </div>
+                <div class="btn">
+                    <a href="#">VER TODOS</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="invitados">
+        <h1>NIESTROS INVITADOS</h1>
+        <hr>
+        <div class="container">
+            <div class="img__inv">
+                <img src="img/invitado1.jpg" alt="">
+                <h2>RAFAEL BAUTISTA</h2>
+            </div>
+            <div class="img__inv">
+                <img src="img/invitado2.jpg" alt="">
+                <h2>SHARI HERRERA</h2>
+            </div>
+            <div class="img__inv">
+                <img src="img/invitado3.jpg" alt="">
+                <h2>GREGORIO SANCHEZ</h2>
+            </div>
+            <div class="img__inv">
+                <img src="img/invitado4.jpg" alt="">
+                <h2>SUSANA RIVERA</h2>
+            </div>
+            <div class="img__inv">
+                <img src="img/invitado5.jpg" alt="">
+                <h2>HAROLD GARCIA</h2>
+            </div>
+            <div class="img__inv">
+                <img src="img/invitado6.jpg" alt="">
+                <h2>SUSAN SANCHEZ</h2>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Section numeros -->
+    <section class="numeros">
+        <div class="capa">
+            <div class="container">
+                <div class="cont__num">
+                    <ul>
+                        <li>
+                            <h1>6</h1>
+                            <p>INITADOS</p>
+                        </li>
+                        <li>
+                            <h1>15</h1>
+                            <p>TALLERES</p>
+                        </li>
+                        <li>
+                            <h1>3</h1>
+                            <p>DIAS</p>
+                        </li>
+                        <li>
+                            <h1>9</h1>
+                            <p>CONFERENCIAS</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Precios-->
+    <section class="precios">
+        <h1>PRECIOS</h1>
+        <hr>
+        <div class="container">
+            <div class="card__precios uno">
+                <h3>PASE POR DIA</h3>
+                <h1>$30</h1>
+                <ul>
+                    <li><i class="fas fa-check"></i>BOCADILLOS GRATIS</li>
+                    <li><i class="fas fa-check"></i>TODAS LAS CONFERENCIAS</li>
+                    <li><i class="fas fa-check"></i>TODOS LOS TALLERES</li>
+                </ul>
+                <a href="#">COMPAR</a>
+            </div>
+            <div class="card__precios">
+                <h3>TODOS LOS DIAS</h3>
+                <h1>$50</h1>
+                <ul>
+                    <li><i class="fas fa-check"></i>BOCADILLOS GRATIS</li>
+                    <li><i class="fas fa-check"></i>TODAS LAS CONFERENCIAS</li>
+                    <li><i class="fas fa-check"></i>TODOS LOS TALLERES</li>
+                </ul>
+                <a href="#">COMPAR</a>
+            </div>
+            <div class="card__precios">
+                <h3>PASE POR 2 DIAS</h3>
+                <h1>$45</h1>
+                <ul>
+                    <li><i class="fas fa-check"></i>BOCADILLOS GRATIS</li>
+                    <li><i class="fas fa-check"></i>TODAS LAS CONFERENCIAS</li>
+                    <li><i class="fas fa-check"></i>TODOS LOS TALLERES</li>
+                </ul>
+                <a href="#">COMPAR</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Mapa-->
+    <section class="map" id="map">
+
+
+    </section>
+
+    <!-- Section testimoniales -->
+    <section class="testimoniales">
+        <h1>TESTIMONIALES</h1>
+        <hr>
+        <div class="container">
+            <div class="conten__testi">
+                <div class="caja__test">
+                    <p><span>"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium
+                        officiis odio labore, iure, tempore cumque dolor unde quos ab vero, modi qui quidem</p>
+                    <div class="img__tes">
+                        <img src="img/invitado1.jpg" alt="">
+                        <div class="parra__tes">
+                            <p>OSWALDO APONTE ESCOBEDO</p>
+                            <P>Diseñador en @prisma</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="caja__test">
+                    <p><span>"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium
+                        officiis odio labore, iure, tempore cumque dolor unde quos ab vero, modi qui quidem</p>
+                    <div class="img__tes">
+                        <img src="img/invitado1.jpg" alt="">
+                        <div class="parra__tes">
+                            <p>OSWALDO APONTE ESCOBEDO</p>
+                            <P>Diseñador en @prisma</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="caja__test">
+                    <p><span>"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium
+                        officiis odio labore, iure, tempore cumque dolor unde quos ab vero, modi qui quidem</p>
+                    <div class="img__tes">
+                        <img src="img/invitado1.jpg" alt="">
+                        <div class="parra__tes">
+                            <p>OSWALDO APONTE ESCOBEDO</p>
+                            <P>Diseñador en @prisma</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Registro -->
+    <section class="registro">
+        <div class="container">
+            <p>Resgistrate al newsletter:</p>
+            <h1>CLOWEBCAMP</h1>
+            <a href="#">RESGISTRO</a>
+        </div>
+    </section>
+
+    <!-- Section Dias Faltantes-->
+    <section class="faltan">
+        <h1>FALTAN</h1>
+        <hr>
+        <div class="container">
+            <ul>
+                <li>
+                    <h1>80</h1>
+                    <p>DIAS</p>
+                </li>
+                <li>
+                    <h1>15</h1>
+                    <p>HORAS</p>
+                </li>
+                <li>
+                    <h1>5</h1>
+                    <p>MINUTOS</p>
+                </li>
+                <li>
+                    <h1>30</h1>
+                    <p>SEGUNDOS</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="info__end">
+        <div class="container">
+            <div>
+                <h3>SOBRE <span>CLOWEBCAMP</span> </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et quia voluptas labore libero
+                    molestiae dolorem. Iusto sunt, sint aut ratione dolorem quis non aliquid sequi laudantium possimus
+                    at quos esse alias accusantium totam reiciendis recusandae eveniet tenetur quasi laboriosam!</p>
+            </div>
+            <div>
+                <h3>ULTIMOS <span>TWEETS</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam maxime obcaecati atque? Expedita tenetur ad eius placeat.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam maxime obcaecati atque? Expedita tenetur ad eius placeat.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam maxime obcaecati atque? Expedita tenetur ad eius placeat.</p>
+                
+            </div>
+            <div>
+                <h3>REDES <span>SOCIALES</span> </h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <footer class="foot">
+        <p>Todos los derechos Reservados CLOWEBCAMP 2020</p>
+    </footer>
+
+    <!--Scrip Maps -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="script/script.js"></script>
+    
+    
+
+</body>
+
+</html>

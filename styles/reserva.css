@@ -1,0 +1,549 @@
+:root{
+    --naraja:rgb(255, 94, 0);
+    --Titulo: 96px;
+    --Subtitulo: 35px;
+    --parrafos: 18px;
+    --typog1: 'Oswald', sans-serif;
+    --typog2: 'Open Sans', sans-serif;
+    --typog3: 'PT Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+/* Container */
+.container{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.head{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/encabezado.jpg");
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.head .container{
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.head .container .redes{
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.head .container a{
+    display: inline-block;
+    color: white;
+    font-size: var(--Subtitulo);
+    margin: 0 15px;
+
+}
+
+.head .container .ubic{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+
+.head .container .ubic > h3{
+    color: white;
+    padding: 0;
+
+}
+
+.head .container .ubic > h3 i{
+    margin-right: 10px;
+    color: var(--naraja);
+}
+.head .container h1{
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    font-size: var(--Titulo);
+    font-family: var(--typog3);
+    text-align: center;
+    margin-top: -15px;
+    padding: 0;    
+
+}
+
+.head .container p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--typog3);
+    color: white;
+    font-size: var(--parrafos);
+
+}
+
+.head .container p span{
+    font-weight: bold;
+
+}
+
+/* Barra de Navegacion */
+.barra{
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    padding: 15px 0;
+
+}
+
+.barra .container{
+    width: 90% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.barra .container ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.barra .container i{
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.barra .container ul li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: var(--parrafos);
+    text-decoration: none;
+    font-family: var(--typog1);
+    transition: 0.5s all;
+}
+
+.barra .container ul li a:hover{
+    background-color: var(--naraja);
+    color: white;
+}
+
+.barra .container ul li .last{
+    color: var(--naraja);
+    border: 2.5px solid var(--naraja);
+}
+
+/* Estilos precios */
+.precios{
+    width: 100%;
+    padding: 30px 0;
+}
+
+.precios > h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: var(--typog1);
+    color: var(--naraja);
+}
+
+
+
+.precios .container{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.precios .container .card__precios{
+    padding: 30px 50px 20px 50px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: 0.5s all;
+    box-sizing: border-box;
+    border: 1px solid white;    
+}
+
+.precios .container .card__precios h1{
+    color: black;  
+}
+
+.precios .container .card__precios:hover{
+    transform: none;
+    border: 1px solid var(--naraja);
+    box-shadow: none;
+}
+
+
+.precios .container .card__precios h3{
+    color: var(--naraja);
+    font-size: var(--parrafos);
+    font-family: var(--typog1);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.precios .container .card__precios h1{
+    font-size: 45px;
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+}
+
+.precios .container .card__precios ul{
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.precios .container .card__precios ul li{
+    margin: 10px;
+    font-family: var(--typog1);
+    font-size: 12px;
+    color: #666666;
+}
+
+.precios .container .card__precios ul li i{
+    color: rgb(2, 189, 2);
+    margin-right: 10px;
+}
+
+
+
+/* Contenedor Formulario */  
+.formulario{
+    margin-top: 85px;
+}
+
+.formulario .container{
+    width: 70%;
+}
+
+.formulario .container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: var(--typog1);
+    color: var(--naraja);
+}
+
+.formulario >h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: var(--Subtitulo);
+    font-family: var(--typog1);
+   
+}
+.formulario > hr{
+    width: 15%;
+    margin: 0 auto;
+    border-color: var(--naraja);
+    margin-bottom: 35px;
+}
+
+
+/* Formulario */
+
+label{
+    font-size: 15px;
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+}
+
+form.form{
+    padding: 20px;
+    margin-top: 30px;
+}
+/* Datos Basicos */
+
+form.form .data__basic{
+    padding: 20px 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.error{
+    width: 200px;
+    text-align: left;
+    padding: 25px 10px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.411);
+    display: none;
+    position: fixed;
+    top: 120px;
+    left: 5px;
+    margin-top: 5px;
+}
+.error__mensaje{
+    display: none;
+    position: fixed;
+    top: 122px;
+    left: 5px;
+}
+
+.resumen{
+    padding: 10px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.3);
+    margin: 5px 0;
+}
+
+.total{
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--typog1);
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Eligue el NUemor de Boletos*/
+
+.precios > h1{
+    margin-bottom: 15px;
+}
+
+
+.precios .container .card__precios .count___bol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.precios .container .card__precios .count___bol label{
+    font-size: 14px;
+    font-family: var(--typog3);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.precios .container .card__precios .count___bol input[type="number"]{
+    width: 60%;
+}
+
+
+/* Elige tus talleres */
+.formulario .talleres{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.formulario .talleres .dia{
+    display: none;
+}
+.formulario .talleres div h2{
+    font-family: var(--typog1);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.formulario .talleres div hr{
+    border: 2px solid var(--naraja);
+    margin-bottom: 1rem;
+}
+
+.formulario .talleres div .cont__talleres{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario .talleres div .cont__talleres .caja{
+    flex-basis: 30%;
+    padding: 15px;
+}
+
+.formulario .talleres div .cont__talleres .caja h4{
+    font-family: var(--typog3);
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.formulario .talleres div .cont__talleres .caja div{
+    margin: 10px 0;
+}
+
+.formulario .talleres div .cont__talleres .caja div label .time{
+    color: var(--naraja);
+    font-weight: bold;
+}
+
+.formulario .talleres div .cont__talleres .caja div input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+/* Estilos Resumen pago */
+.pagos__extras{
+    margin-top: 20px;
+    
+}
+
+.pagos__extras .conten__pagos{
+    display: flex;
+    padding: 20px 40px;
+    background-color: white;
+    justify-content: space-between;
+}
+.pagos__extras .conten__pagos div{
+    flex-basis: 49%;
+    flex-grow: 1;
+}
+
+.pagos__extras .conten__pagos .extras div{
+    margin: 10px 0;
+}
+
+.pagos__extras .conten__pagos .extras div label{
+    letter-spacing: normal;
+}
+
+.pagos__extras .conten__pagos .extras div label small{
+    color: #666666;
+}
+
+.pagos__extras .conten__pagos .extras a, .calcular{
+    display: inline-block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: var(--typog1);
+    color: white;
+    background-color: var(--naraja);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--naraja);
+    transition: all 0.5s;
+}
+
+.pagos__extras .conten__pagos .extras a:hover, .calcular:hover{
+    background-color: rgba(255, 166, 0, 0.356);
+    color: var(--naraja);
+}
+
+.pagos__extras .conten__pagos .pagar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.pagos__extras .conten__pagos .pagar h3{
+    font-family: var(--typog1);
+    margin: 0;
+    
+
+}
+
+.pagos__extras .conten__pagos .pagar a{
+    display: inline-block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: var(--typog1);
+    color: white;
+    background-color: var(--naraja);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--naraja);
+    transition: all 0.5s;
+
+}
+
+.pagos__extras .conten__pagos .pagar a:hover{
+    background-color: rgba(255, 166, 0, 0.356);
+    color: var(--naraja);
+}
+
+
+/* Estilos par Informacion Final */
+.info__end{
+    width: 100%;
+    margin-top: 85px;
+    background-color: rgb(56, 56, 56);
+}
+
+.info__end .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__end .container div{
+    flex-basis: 33%;
+    padding: 40px 10px;
+}
+
+.info__end .container div h3{
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.info__end .container div h3 span{
+    color: var(--naraja);
+}
+
+
+.info__end .container div p{
+    font-family: var(--typog2);
+    font-size: 12px;
+    text-align: justify;
+    color: white;
+}
+
+.info__end .container div a{
+    color: white;
+    font-size: 30px;
+    margin-right: 18px;
+    transition: 0.5s all;
+}
+
+.info__end .container div a:hover{
+    color: var(--naraja);
+
+}
+
+.foot{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.foot p{
+    font-family: var(--typog3);
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+}

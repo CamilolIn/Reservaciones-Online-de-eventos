@@ -1,0 +1,762 @@
+:root{
+    --naraja:rgb(255, 94, 0);
+    --Titulo: 96px;
+    --Subtitulo: 35px;
+    --parrafos: 18px;
+    --typog1: 'Oswald', sans-serif;
+    --typog2: 'Open Sans', sans-serif;
+    --typog3: 'PT Sans', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+/* Container */
+.container{
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.head{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/encabezado.jpg");
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.head .container{
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.head .container .redes{
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.head .container a{
+    display: inline-block;
+    color: white;
+    font-size: var(--Subtitulo);
+    margin: 0 15px;
+
+}
+
+.head .container .ubic{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 0;
+
+}
+
+.head .container .ubic > h3{
+    color: white;
+    padding: 0;
+
+}
+
+.head .container .ubic > h3 i{
+    margin-right: 10px;
+    color: var(--naraja);
+}
+.head .container h1{
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    font-size: var(--Titulo);
+    font-family: var(--typog3);
+    text-align: center;
+    margin-top: -15px;
+    padding: 0;    
+
+}
+
+.head .container p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--typog3);
+    color: white;
+    font-size: var(--parrafos);
+
+}
+
+.head .container p span{
+    font-weight: bold;
+
+}
+
+/* Barra de Navegacion */
+.barra{
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    padding: 15px 0;
+
+}
+
+.barra .container{
+    width: 90% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.barra .container ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.barra .container i{
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+.barra .container ul li a{
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: var(--parrafos);
+    text-decoration: none;
+    font-family: var(--typog1);
+    transition: 0.5s all;
+}
+
+.barra .container ul li a:hover{
+    background-color: var(--naraja);
+    color: white;
+}
+
+.barra .container ul li .last{
+    color: var(--naraja);
+    border: 2.5px solid var(--naraja);
+}
+
+/* Estilos Descripcion Pagina */
+.descripcion{
+    padding: 70px 0;
+}
+
+.descripcion .container h1{
+    font-size: var(--Subtitulo);
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--typog1);
+}
+
+.descripcion .container hr{
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-color: var(--naraja);
+}
+
+.descripcion .container p{
+    font-family: var(--typog2);
+    text-align: center;
+    font-size: var(--parrafos);
+    line-height: 32px;
+}
+
+/* Estilos Cronograma */
+.cronogra{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.cronogra video{
+    width: 100%;
+
+}
+
+.cronogra .container{
+    display: flex;
+    align-items: center;
+    height: 100% !important;
+
+}
+
+.cronogra .container .program{
+    flex-basis: 50%;
+    padding: 20px 45px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 18%;
+    left: 8%;
+
+}
+
+.cronogra .container .program h1{
+    font-family: var(--typog1);
+    text-align: center;
+    font-size: var(--Subtitulo);
+    margin-bottom: 7px;
+}
+
+.cronogra .container .program hr{
+    border-color: var(--naraja);
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.cronogra .container .program #sep__uno{
+    border-color: var(--naraja);
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.cronogra .container .program .list__uno{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 15px;
+    font-family: var(--typog1);
+}
+
+.cronogra .container .program .list__uno li i{
+    color: var(--naraja);
+    margin-right: 10px;
+    font-size: var(--parrafos);
+}
+
+.cronogra .container .program .content__prom h2{
+    color: var(--naraja);
+    font-family: var(--typog1);
+    font-size: var(--parrafos);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+.cronogra .container .program .content__prom ul li{
+    padding: 7px 0;
+    font-family: var(--typog2);
+}
+
+.cronogra .container .program .content__prom ul li i{
+    color: var(--naraja);
+    margin-right: 10px;
+    font-size: var(--parrafos);
+}
+
+.cronogra .container .program .content__prom ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.cronogra .container .program .btn{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.cronogra .container .program .btn a{
+    display: block;
+    font-size: var(--parrafos);
+    padding: 7px 35px;
+    background-color: var(--naraja);
+    text-decoration: none;
+    color: white;
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    border: 1px solid var(--naraja);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cronogra .container .program .btn a:hover{
+    background-color: transparent;
+    color: var(--naraja);
+}
+
+
+/* Estilos Para invitados */
+.invitados{
+    padding: 200px 0 60px 0;
+    text-align: center;
+}
+
+.invitados h1{
+    font-family: var(--typog1);
+    font-size: var(--Subtitulo);
+}
+
+.invitados hr{
+    width: 15%;
+    margin: 0 auto;
+    border-color: var(--naraja);
+    margin-bottom: 40px;
+}
+
+
+.invitados .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.invitados .container .img__inv img{
+    width: 100%;
+    filter: 1;
+    -webkit-filter: grayscale(1);
+    transition: 0.6s all;
+    cursor: pointer;
+}
+
+.invitados .container .img__inv img:hover{
+
+    filter: 0;
+    -webkit-filter: grayscale(0);
+}
+
+.invitados .container .img__inv{
+    flex-basis: 30%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.invitados .container .img__inv h2{
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--naraja);
+    font-family: var(--typog1);
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+
+/* Estilos numeros */
+.numeros{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/bg-resumen.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.numeros .capa{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numeros .capa ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+}
+
+.numeros .capa ul li{
+    margin: 0 90px;
+}
+
+
+.numeros .capa ul li h1{
+    color: var(--naraja);
+    font-family: var(--typog1);
+    font-size: 65px;
+    text-align: center;
+}
+
+.numeros .capa ul li p{
+    color: white;
+    font-family: var(--typog1);
+}
+
+/* Estilos precios */
+.precios{
+    width: 100%;
+    padding: 30px;
+}
+
+.precios > h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: var(--Subtitulo);
+    font-family: var(--typog1);
+}
+
+
+.precios > hr{
+    width: 5%;
+    border-color: var(--naraja);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+.precios .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.precios .container .card__precios{
+    padding: 30px 70px 20px 70px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: 0.5s all;
+    box-sizing: border-box;
+    border: 1px solid white;
+    
+}
+
+.precios .container .card__precios:hover{
+    transform: scale(1.2,1.2);
+    border: 1px solid var(--naraja);
+    box-shadow: 0 0 20px #666666;
+}
+
+
+.precios .container .card__precios h3{
+    color: var(--naraja);
+    font-size: var(--parrafos);
+    font-family: var(--typog1);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.precios .container .card__precios h1{
+    font-size: 45px;
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+}
+
+.precios .container .card__precios ul{
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.precios .container .card__precios ul li{
+    margin: 10px;
+    font-family: var(--typog1);
+    font-size: 12px;
+    color: #666666;
+}
+
+.precios .container .card__precios ul li i{
+    color: rgb(2, 189, 2);
+    margin-right: 10px;
+}
+
+.precios .container .card__precios a{
+    display: block;
+    font-size: var(--parrafos);
+    padding: 7px 35px;
+    background-color: var(--naraja);
+    text-decoration: none;
+    color: white;
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    border: 1px solid var(--naraja);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.precios .container .card__precios a:hover{
+    background-color: transparent;
+    color: var(--naraja);
+}
+
+/* Estilos Mapa */
+.map{
+    width: 100%;
+    height: 420px;
+    background-color: yellowgreen;
+    margin-top: 50px;
+}
+
+/* Estilos Testimoniales */
+.testimoniales{
+    width: 100%;
+    margin-top: 80px;
+}
+.testimoniales > h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: var(--Subtitulo);
+    font-family: var(--typog1);
+}
+
+.testimoniales > hr{
+    width: 5%;
+    border-color: var(--naraja);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.testimoniales .container .conten__testi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimoniales .container .conten__testi .caja__test{
+    flex-basis: 31%;
+    padding: 20px 20px 20px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: white;
+}
+
+.testimoniales .container .conten__testi .caja__test p{
+    text-align: justify;
+    font-size: 13px;
+    color: #666666;
+    line-height: 25px;
+    margin-bottom: 7px;
+    font-family: var(--typog2);
+}
+
+.testimoniales .container .conten__testi .caja__test p span{
+    position: absolute;
+    color: var(--naraja);
+    font-size: 60px;
+    left: 10px;
+    top: 30px;
+}
+.testimoniales .container .conten__testi .caja__test .img__tes img{
+    width: 30%;
+    border-radius: 999px;
+    margin-left: -15px;
+    margin-right: 10px;
+}
+
+.testimoniales .container .conten__testi .caja__test .img__tes .parra__tes p:nth-child(1){
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+    color: var(--naraja);
+    font-weight: bold;
+    font-family: var(--typog2);
+}
+.testimoniales .container .conten__testi .caja__test .img__tes .parra__tes p:nth-child(2){
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+    font-family: var(--typog2);
+}
+
+
+.testimoniales .container .conten__testi .caja__test .img__tes{
+    display: flex;
+}
+
+
+/* Estilos registro */
+.registro{
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/bg-inscribir.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.registro .container{
+    display: flex;
+    height: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro .container p{
+    font-family: var(--typog3);
+    color: white;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.registro .container h1{
+    font-family: var(--typog3);
+    color: white;
+    font-size: var(--Titulo);
+    margin: 0;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.registro .container a{
+    display: block;
+    padding: 10px 50px;
+    color: white;
+    font-family: var(--typog1);
+    text-decoration: none;
+    border: 3px solid white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+.registro .container a:hover{
+    border: 3px solid white;
+    background-color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
+
+/*  Estilos Dias Faltantes */
+.faltan{
+    width: 100%;
+    margin-top: 80px;
+    height: 250px;
+}
+
+.faltan > h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: var(--Subtitulo);
+    font-family: var(--typog1);
+}
+
+.faltan >hr{
+    width: 5%;
+    border-color: var(--naraja);
+    margin: 0 auto;
+}
+
+.faltan .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.faltan .container ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.faltan .container ul li{
+    margin: 0 60px;
+}
+
+.faltan .container ul li h1{
+    color: var(--naraja);
+    font-family: var(--typog1);
+    font-size: 65px;
+    text-align: center;
+}
+
+.faltan .container ul li p{
+    font-family: var(--typog1);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+
+/* Estilos par Informacion Final */
+.info__end{
+    width: 100%;
+    margin-top: 85px;
+    background-color: rgb(56, 56, 56);
+}
+
+.info__end .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__end .container div{
+    flex-basis: 33%;
+    padding: 40px 10px;
+}
+
+.info__end .container div h3{
+    font-family: var(--typog1);
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.info__end .container div h3 span{
+    color: var(--naraja);
+}
+
+
+.info__end .container div p{
+    font-family: var(--typog2);
+    font-size: 12px;
+    text-align: justify;
+    color: white;
+}
+
+.info__end .container div a{
+    color: white;
+    font-size: 30px;
+    margin-right: 18px;
+    transition: 0.5s all;
+}
+
+.info__end .container div a:hover{
+    color: var(--naraja);
+
+}
+
+.foot{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: rgb(32, 32, 32);
+
+}
+
+.foot p{
+    font-family: var(--typog3);
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    
+
+}

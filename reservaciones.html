@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloWebCamp</title>
+    <!--Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Oswald:wght@400&family=PT+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6246293a11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/reserva.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="head">
+        <div class="container">
+            <div class="redes">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="ubic">
+                <h3 class="h"><i class="far fa-calendar-alt"></i>10-12 DIC</h3>
+                <h3><i class="fas fa-map-marker-alt"></i>Bogota D.C</h3>
+            </div>
+            <h1>CLOWEBCAMP</h1>
+            <p>La mejor conferencia de <span>diseño web</span> </p>
+        </div>
+    </header>
+
+    <!--Section Barra de Navegacion -->
+    <section class="barra">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logo.svg" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">CONFERENCIA</a></li>
+                    <li><a href="#">CALENDARIO</a></li>
+                    <li><a href="#">INVITADOS</a></li>
+                    <li><a href="reservaciones.html" class="last">RESERVACIONES</a></li>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Formulario -->
+    <section class="formulario">
+        <h1>REGISTRO DE USUARIOS</h1>
+        <hr>
+        <div class="container">
+
+            <form class="form" id="formu">
+
+                <div class="data__basic">
+                    <div class="caja__basic">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre">
+                    </div>
+                    <div class="caja__basic">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Tu Apellido">
+                    </div>
+                    <div class="caja__basic">
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" placeholder="Tu Email">
+                    </div><br>
+                </div>
+                <h2 class="error__mensaje" id="error__mensaje">Error al Enviar!</h2>
+                <div class="error" id="error"></div>
+                
+
+                <!-- Precios -->
+                <section class="precios">
+                   
+                    <h1>ELIGE EL NUMERO DE BOLETOS</h1>
+
+                    <div class="container">
+                        <div class="card__precios uno">
+                            <h3>PASE POR DIA</h3>
+                            <h1>$30</h1>
+                            <ul>
+                                <li><i class="fas fa-check"></i>BOCADILLOS GRATIS</li>
+                                <li><i class="fas fa-check"></i>TODAS LAS CONFERENCIAS</li>
+                                <li><i class="fas fa-check"></i>TODOS LOS TALLERES</li>
+                            </ul>
+                            <div class="count___bol">
+                                <label for="count">Boletos deseados:</label>
+                                <input type="number" name="count" class="count" id="un__dia" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="card__precios">
+                            <h3>TODOS LOS DIAS</h3>
+                            <h1>$50</h1>
+                            <ul>
+                                <li><i class="fas fa-check"></i>BOCADILLOS GRATIS</li>
+                                <li><i class="fas fa-check"></i>TODAS LAS CONFERENCIAS</li>
+                                <li><i class="fas fa-check"></i>TODOS LOS TALLERES</li>
+                            </ul>
+                        <div class="count___bol">
+                            <label for="count">Boletos deseados:</label>
+                            <input type="number" name="count" class="count" id="todos__dias" placeholder="0">
+                        </div>
+                        </div>
+                        <div class="card__precios">
+                            <h3>PASE POR 2 DIAS</h3>
+                            <h1>$45</h1>
+                            <ul>
+                                <li><i class="fas fa-check"></i>BOCADILLOS GRATIS</li>
+                                <li><i class="fas fa-check"></i>TODAS LAS CONFERENCIAS</li>
+                                <li><i class="fas fa-check"></i>TODOS LOS TALLERES</li>
+                            </ul>
+                            <div class="count___bol">
+                                <label for="count">Boletos deseados:</label>
+                                <input type="number" name="count" class="count" id="dos__dias" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Elige tus talleres -->
+                <h1>ELIGE TUS TALLERES</h1>
+                <section class="talleres">
+                   
+                        <div class="dia viernes" id="viernes">
+                            <h2>VIERNES</h2>
+                            <hr>
+                            <div class="cont__talleres">
+                                <div class="caja">
+                                    <h4>Talleres:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                                <div class="caja">
+                                    <h4>Conferencias:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                                <div class="caja">
+                                    <h4>Seminarios:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dia sabado" id="sabado">
+                            <h2>SABADO</h2>
+                            <hr>
+                            <div class="cont__talleres">
+                                <div class="caja">
+                                    <h4>Talleres:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                                <div class="caja">
+                                    <h4>Conferencias:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                                <div class="caja">
+                                    <h4>Seminarios:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dia domingo" id="domingo">
+                            <h2>DOMINGO</h2>
+                            <hr>
+                            <div class="cont__talleres">
+                                <div class="caja">
+                                    <h4>Talleres:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                                <div class="caja">
+                                    <h4>Conferencias:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                                <div class="caja">
+                                    <h4>Seminarios:</h4>
+                                    <div><input type="checkbox"><label for="text"><span class="time">10:00</span> Responsive Web Desing</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">12:00</span> Flebox</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">14:00</span> HTML5 y CSS3</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">17:00</span> Drupla</label></div>
+                                    <div><input type="checkbox"><label for="text"><span class="time">19:00</span> Wordpress</label></div>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+
+                <!-- Pagos Extras -->
+                <section class="pagos__extras">
+                    <h1>PAGO Y EXTRAS</h1>
+                    <div class="conten__pagos">
+                        <div class="extras">
+                            <div>
+                                <label for="camisa">Camisa del evento $10 <small>(promocion 7% dto.)</small></label><br>
+                                <input type="number" name="numero__camisa" placeholder="0" id="camisa" >
+                            </div>
+                            <div>
+                                <label for="tag">Paquete de 10 etiquetas $2 <small>(HTML5, CSS3, JavaScript, Crome)</small></label><br>
+                                <input type="number" name="tag"  placeholder="0" id="etiqueta">
+                            </div>
+                            <div>
+                                <label for="regalo">Seleccione un regalo</label><br>
+                                <select name="regalo" id="regalo">
+                                    <option value="">--Seleccione un Regalo</option>
+                                    <option value="eqtiquita">Calcomania</option>
+                                    <option value="Vaso">Vaso</option>
+                                    <option value="Calendario">Calendario</option>
+                                </select>
+                            </div>
+                                <input type="submit" id="calcular" class="calcular">
+                                <!--<a href="#" id="calcular">CALCULAR</a>-->
+              
+                        </div>
+                        <div class="pagar">
+                            <h3>RESUMEN:</h3>
+                            <div class="resumen" id="resumen"></div>
+                            <h3>TOTAL:</h3>
+                            <div class="total" id="total"></div>
+                            
+                                <a href="#" id="pagar">PAGAR</a>
+                          
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+         </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="info__end">
+        <div class="container">
+            <div>
+                <h3>SOBRE <span>CLOWEBCAMP</span> </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et quia voluptas labore libero
+                    molestiae dolorem. Iusto sunt, sint aut ratione dolorem quis non aliquid sequi laudantium possimus
+                    at quos esse alias accusantium totam reiciendis recusandae eveniet tenetur quasi laboriosam!</p>
+            </div>
+            <div>
+                <h3>ULTIMOS <span>TWEETS</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam maxime obcaecati atque? Expedita tenetur ad eius placeat.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam maxime obcaecati atque? Expedita tenetur ad eius placeat.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam maxime obcaecati atque? Expedita tenetur ad eius placeat.</p>
+                
+            </div>
+            <div>
+                <h3>REDES <span>SOCIALES</span> </h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <footer class="foot">
+        <p>Todos los derechos Reservados CLOWEBCAMP 2020</p>
+    </footer>
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
