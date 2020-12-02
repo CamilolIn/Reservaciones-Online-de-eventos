@@ -8,3 +8,11 @@
 <p>Mira la Demo: <a href="https://reservasonline.netlify.app/index.html">Reservas demo</a>   </p>
 
 
+<div>
+    <h1>TECNOLOGIAS USADAS</h1>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JAVASCRIPT</li>
+    </ul>
+</div>
